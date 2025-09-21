@@ -28,7 +28,7 @@ ProgressBarBackgroundColor=0x606060
 ProgressBarForegroundColor=0xffffff
 
 DialogHorizontalAlignment=.5
-DialogVerticalAlignment=.9
+DialogVerticalAlignment=.5
 DialogClearsFirmwareBackground=false
 
 [boot-up]
