@@ -29,14 +29,14 @@ ProgressBarForegroundColor=0xffffff
 
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.9
-DialogClearsFirmwareBackground=true
+DialogClearsFirmwareBackground=false
 
 [boot-up]
 UseAnimation=true
 UseEndAnimation=false
 UseFirmwareBackground=false
 SuppressMessages=false
-ProgressBarShowPercentComplete=true
+ProgressBarShowPercentComplete=false
 UseProgressBar=true
 Title=Starting Up...
 
@@ -45,7 +45,7 @@ UseAnimation=true
 UseEndAnimation=false
 UseFirmwareBackground=false
 SuppressMessages=false
-ProgressBarShowPercentComplete=true
+ProgressBarShowPercentComplete=false
 UseProgressBar=true
 Title=Shutting Down...
 
@@ -54,7 +54,7 @@ UseAnimation=true
 UseEndAnimation=false
 UseFirmwareBackground=false
 SuppressMessages=false
-ProgressBarShowPercentComplete=true
+ProgressBarShowPercentComplete=false
 UseProgressBar=true
 Title=Restarting...
 
@@ -63,7 +63,7 @@ UseAnimation=true
 UseEndAnimation=false
 UseFirmwareBackground=false
 SuppressMessages=false
-ProgressBarShowPercentComplete=true
+ProgressBarShowPercentComplete=false
 UseProgressBar=true
 Title=Installing System Updates...
 SubTitle=Please do not turn off your computer.
@@ -73,7 +73,7 @@ UseAnimation=true
 UseEndAnimation=false
 UseFirmwareBackground=false
 SuppressMessages=false
-ProgressBarShowPercentComplete=true
+ProgressBarShowPercentComplete=false
 UseProgressBar=true
 Title=Installing System Upgrades...
 SubTitle=Please do not turn off your computer.
@@ -83,7 +83,7 @@ UseAnimation=true
 UseEndAnimation=false
 UseFirmwareBackground=false
 SuppressMessages=false
-ProgressBarShowPercentComplete=true
+ProgressBarShowPercentComplete=false
 UseProgressBar=true
 Title=Installing Firmware Updates...
 SubTitle=Please do not turn off your computer.
