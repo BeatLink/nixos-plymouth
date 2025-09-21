@@ -3,17 +3,12 @@
 }:
 pkgs.stdenv.mkDerivation {
     pname = "nixos-plymouth-theme";
-    version = "0.0.1";
+    version = "master";
 
     src = ./src;
 
-    buildInputs = [
-        pkgs.git
-    ];
-
-    unpackPhase = '''';
-
-    buildPhase = '''';
+    dontUnpack = true;
+    dontBuild = true;
 
     installPhase = ''
         # Copy files
