@@ -4,8 +4,8 @@ Description=A NixOS Plymouth theme that fades into the the NixOS Logo
 ModuleName=two-step
 
 [two-step]
-Font=Cantarell 20
-TitleFont=Cantarell Light 30
+Font=Cantarell 12
+TitleFont=Cantarell Light 16
 ImageDir=/usr/share/plymouth/themes/nixos-plymouth/resources
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.8
@@ -15,8 +15,8 @@ HorizontalAlignment=.5
 VerticalAlignment=.8
 WatermarkHorizontalAlignment=.5
 WatermarkVerticalAlignment=.98
-Transition=none
-TransitionDuration=0.0
+Transition=fade-over
+TransitionDuration=5.0
 BackgroundStartColor=0x000000
 BackgroundEndColor=0x000000
 ProgressBarWidth=350
