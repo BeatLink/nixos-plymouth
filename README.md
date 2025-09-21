@@ -1,56 +1,28 @@
-# darwin-plymouth
-
-This an awesome, sophisticated and minimalist Plymouth Theme.
-
-## Prerequisites
-
-In order to use this theme, you need to install and configure Plymouth application to show a graphical boot animation while the boot process happens in the background. To achieve this run these commands:
-
-```bash
-$ sudo apt install plymouth plymouth-themes
-```
-
-And configure Plymouth for your graphic card, editing the file `/etc/initramfs-tools/modules` and adding these modesetting lines:
-
-* **For Intel Graphic Cards:**
-    ```ini
-    # KMS
-    intel_agp
-    drm
-    i915 modeset=1
-    ```
-* **For NVidia Graphic Cards:**
-    ```ini
-    # KMS
-    drm
-    nouveau modeset=1
-    ```
-* **For ATI Graphic Cards:**
-    ```ini
-    # KMS
-    drm
-    radeon modeset=1
-    ```
-
-## How to install it?
-
-Follow this instructions from a Terminal:
-
-1. Copy `darwin` folder to path `/usr/share/plymouth/themes/`:
-    ```bash
-    $ sudo cp -R darwin/ /usr/share/plymouth/themes/
-    ```
-
-2. Install it running these commands:
-    ```bash
-    $ sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/darwin/darwin.plymouth 100
-
-    $ sudo update-alternatives --config default.plymouth
-    ```
-
-    And choose the plymouth theme number, then press Enter key
-
-3. Activate it running this command:
-    ```bash
-    $ sudo update-initramfs -u
-    ```
+1. Generate NixOS Logo from branding repo
+2. Edit in inkscape
+    1. Add background layer and center on page
+    2. Group logo and center in background layer
+    3. Duplicate logo group and set blur to 15%
+    4. Duplicate logo and set blur to 30%
+    5. Rename groups to logo, blur 1 and blur 2 respectively
+4. Animate in xyris.app
+    1. Create Fade In animation
+        1. Set both blur groups opacity to 0
+        2. Animate logo opacity
+        3. Set keyframe at position 0 with opacity 0
+        4. Set key frame at 5s with opacity 100
+        5. Set animation to ease in
+        6. Export as mp4
+    2. Create pulse animation
+        1. Set logo opacity to 100 and both blurs to 100
+        2. Animate both blurs
+        3. Set keyframe at the following positions with the following opacities for both blurs
+            1. 0s 0%
+            2. 2.5s 100%
+            3. 3s   100%
+            4. 5.5s 0%
+            5. 6s   0%
+        4. Set ease in to all transitions
+        5. Export as mp4
+5. Convert fade in to image series
+    2.  

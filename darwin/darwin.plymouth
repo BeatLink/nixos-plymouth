@@ -1,8 +1,0 @@
-[Plymouth Theme]
-Name=Darwin Plymouth
-Description=A awesome, sophisticated and minimalist Plymouth
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/darwin
-ScriptFile=/usr/share/plymouth/themes/darwin/darwin.script
