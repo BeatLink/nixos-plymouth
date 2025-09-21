@@ -15,6 +15,6 @@ pkgs.stdenv.mkDerivation {
         cp -Rv resources $INSTALL_PATH
 
         # Fix path
-        sed -i "s@\/usr\/@$out\/@" $INSTALL_PATH/nixos-plymouth.plymouth"
+        sed -i "s@\/usr\/@$out\/@" $INSTALL_PATH/nixos-plymouth.plymouth
     '';
 }
