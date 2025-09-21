@@ -12,7 +12,7 @@ BackgroundEndColor=0x000000
 HorizontalAlignment=.5
 VerticalAlignment=.5
 Transition=fade-over
-TransitionDuration=2.0
+TransitionDuration=6.0
 
 TitleHorizontalAlignment=.5
 TitleVerticalAlignment=.75
