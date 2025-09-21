@@ -15,10 +15,10 @@ in
         enable = lib.mkEnableOption "nixos-pulse";
         theme = lib.mkOption {
             type = lib.types.enum [
-                "dark"
-                "light"
+                "nixos-pulse-dark"
+                "nixos-pulse-light"
             ];
-            default = "dark";
+            default = "nixos-pulse-dark";
         };
         duration = lib.mkOption {
             type = lib.types.float;
