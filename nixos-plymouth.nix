@@ -12,10 +12,12 @@ pkgs.stdenv.mkDerivation {
 
     installPhase = ''
         # Copy files
-        install -m 755 -vDt "$out/share/plymouth/themes/nixos-plymouth" nixos-plymouth.plymouth
-        install -m 644 -vDt "$out/share/plymouth/themes/nixos-plymouth" resources/*
+        INSTALL_PATH="$out/share/plymouth/themes/nixos-plymouth"
+        mkdir -p $INSTALL_PATH
+        install -m 755 -vDt $INSTALL_PATH nixos-plymouth.plymouth
+        install -m 644 -vDt $INSTALL_PATH resources/*
 
         # Fix path
-        sed -i "s@\/usr\/@$out\/@" "$out/share/plymouth/themes/nixos-plymouth/nixos-plymouth.plymouth"
+        sed -i "s@\/usr\/@$out\/@" $INSTALL_PATH/nixos-plymouth.plymouth"
     '';
 }
