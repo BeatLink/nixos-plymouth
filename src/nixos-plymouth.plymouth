@@ -1,5 +1,5 @@
 [Plymouth Theme]
-Name=NixOS-Plymouth
+Name=nixos-plymouth
 Description=A NixOS Plymouth theme that fades into the the NixOS Logo
 ModuleName=two-step
 
